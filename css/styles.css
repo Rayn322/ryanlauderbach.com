@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+  /* Breakpoints */
+  --display-xs: 0px;
+  --display-sm: 600px;
+  --display-md: 900px;
+  --display-lg: 1200px;
+  --display-xl: 1500px;
+
+  /* fonts */
+  --font-serif: "Halant";
+  --font-sans-serif: "Nunito Sans";
+
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue: hsl(231, 82%, 6%);
+  --color-red: hsl(12, 98%, 44%);
+  --color-orange: hsl(23, 97%, 46%);
+  --color-yellow: hsl(43, 100%, 88%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--color-blue);
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-sans-serif);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 1.6rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.heading {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-family: var(--font-serif);
+  text-align: center;
+}
+
+.sub-heading {
+  color: var(--color-orange);
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 2.4rem 0;
+  max-width: 24ch;
+  color: var(--color-yellow);
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: var(--font-sans-serif);
+  text-align: center;
+}
+
+.call-to-action {
+  margin-bottom: 2.4rem;
+  color: var(--color-orange);
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.nav-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-social li {
+  transition: 300ms;
+  margin: 0 0.8rem;
+}
+
+.nav-social li:hover {
+  scale: 1.2;
+  transition: 300ms;
+}
